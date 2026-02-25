@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTC LEAKS • logowanie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="header">
+            <h1>LTC LEAKS</h1>
+            <p>panel dostępowy</p>
+        </div>
+
+        <div class="login-card">
+            <div class="login-tabs">
+                <button class="login-tab active" onclick="switchTab('login')">logowanie</button>
+                <button class="login-tab" onclick="switchTab('register')">rejestracja</button>
+            </div>
+
+            <div id="loginForm">
+                <div class="field">
+                    <label>email</label>
+                    <input type="email" id="loginEmail" placeholder="twoj@email.com">
+                </div>
+                <div class="field">
+                    <label>hasło</label>
+                    <input type="password" id="loginPassword" placeholder="••••••••">
+                </div>
+                <button class="primary" onclick="userLogin()" style="width:100%">zaloguj</button>
+            </div>
+
+            <div id="registerForm" style="display:none">
+                <div class="field">
+                    <label>nazwa</label>
+                    <input type="text" id="registerName" placeholder="janek123">
+                </div>
+                <div class="field">
+                    <label>email</label>
+                    <input type="email" id="registerEmail" placeholder="twoj@email.com">
+                </div>
+                <div class="field">
+                    <label>hasło</label>
+                    <input type="password" id="registerPassword" placeholder="min 6 znaków">
+                </div>
+                <button class="primary" onclick="userRegister()" style="width:100%">zarejestruj</button>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div>ltc leaks // 2026</div>
+            <div>krvl_keine</div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
